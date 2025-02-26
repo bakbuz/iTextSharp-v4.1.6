@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>Archival.iTextSharp</Title>
+		<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+		<FileVersion>$(VersionPrefix)</FileVersion>
+		<VersionPrefix>4.1.6</VersionPrefix>
+		<RepositoryUrl>https://github.com/bakbuz/iTextSharp-v4.1.6</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/bakbuz/iTextSharp-v4.1.6</PackageProjectUrl>
+		<PackageTags>iTextSharp; netstandard2.1</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Description>A legacy version of iTextSharp for backward compatibility. This package allows older projects to continue using iTextSharp with minimal changes.</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+		<PackageReference Include="System.Drawing.Common" Version="9.0.2" />
+	</ItemGroup>
+
+</Project>
